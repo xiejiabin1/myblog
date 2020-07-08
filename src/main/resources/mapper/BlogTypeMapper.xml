@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xie.myblog.dao.BlogTypeDao">
+    <resultMap id="blogTypeMap" type="com.xie.myblog.po.BlogType">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+
+    <select id="selectBlogType" resultType="com.xie.myblog.po.BlogType">
+        select * from `blog_type`
+        <where>
+            <if test="name != null and name != ''">
+                and `name` like concat('%',#{name},'%')
+            </if>
+        </where>
+        order by id
+    </select>
+
+    <select id="selectBlogTypeToCount" resultType="com.xie.myblog.po.BlogType">
+        select * from `blog_type` order by id
+    </select>
+
+    <delete id="delBlogType" parameterType="Long">
+        delete from `blog_type` where id = #{id}
+    </delete>
+
+    <update id="updateBlogType" parameterType="com.xie.myblog.po.BlogType">
+        update `blog_type`
+        set `name` = #{name}
+        where id = #{id}
+    </update>
+
+    <insert id="addBlogType" parameterType="com.xie.myblog.po.BlogType">
+        insert into `blog_type`(`name`) values(#{name})
+    </insert>
+
+    <select id="isName" parameterType="String" resultType="Integer">
+        select count(1) from `blog_type` where `name` = #{name}
+    </select>
+</mapper>

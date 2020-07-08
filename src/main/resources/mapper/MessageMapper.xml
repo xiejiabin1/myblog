@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xie.myblog.dao.MessageDao">
+    <resultMap id="messageMap" type="com.xie.myblog.po.Message">
+        <id property="messageId" column="messageId"/>
+        <result property="userId" column="userId"/>
+        <result property="parentMessageId" column="parentMessageId"/>
+        <result property="content" column="content"/>
+        <result property="adminMessage" column="adminMessage"/>
+        <result property="createTime" column="createTime"/>
+        <association property="user" javaType="com.xie.myblog.po.User">
+            <id property="userId" column="userId"/>
+            <result property="nickName" column="nickName"/>
+            <result property="typeId" column="typeId"/>
+            <result property="avatar" column="avatar"/>
+        </association>
+    </resultMap>
+
+    <select id="selectMessageByParent" resultMap="messageMap" parameterType="Long">
+        select * from `message`
+        inner join `user` on `user`.userId = `message`.userId
+        where parentMessageId = #{parentMessageId}
+    </select>
+
+    <select id="selectReplayOne" resultMap="messageMap" parameterType="Long">
+        select * from `message`
+        inner join `user` on `user`.userId = `message`.userId
+        where parentMessageId = #{messageId}
+    </select>
+
+    <select id="selectReplayTwoList" resultMap="messageMap" parameterType="Long">
+        select * from `message`
+        inner join `user` on `user`.userId = `message`.userId
+        where parentMessageId = #{childMessageId}
+    </select>
+
+    <insert id="addMessage" parameterType="com.xie.myblog.po.Message">
+        insert into `message`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="parentMessageId != null">
+                parentMessageId,
+            </if>
+            <if test="content != null">
+                content,
+            </if>
+            <if test="adminMessage != null ">
+                adminMessage,
+            </if>
+            <if test="createTime != null">
+                createTime,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="userId != null">
+                #{userId},
+            </if>
+            <if test="parentMessageId != null">
+                #{parentMessageId},
+            </if>
+            <if test="content != null">
+                #{content},
+            </if>
+            <if test="adminMessage != null and adminMessage == true">
+                1,
+            </if>
+            <if test="adminMessage != null and adminMessage == false">
+                0,
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="selectMessageById" resultMap="messageMap" parameterType="Long">
+        select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar from `message`
+        inner join `user` on `user`.userId = `message`.userId
+        where messageId = #{messageId}
+    </select>
+
+    <select id="selectCount" resultType="Integer">
+        select count(1) from `message`
+    </select>
+</mapper>

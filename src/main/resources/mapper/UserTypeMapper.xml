@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xie.myblog.dao.UserTypeDao">
+    <resultMap id="userTypeMap" type="com.xie.myblog.po.UserType">
+        <id property="id" column="id"/>
+        <result property="name" column="name"/>
+    </resultMap>
+
+    <select id="selectUserTypeAll" resultMap="userTypeMap" parameterType="String">
+        select * from `user_type`
+        <where>
+            <if test="name != null and name != ''">
+                and name = #{name}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectUserTypeById" resultType="com.xie.myblog.po.UserType" parameterType="Long">
+        select * from `user_type` where id = #{id}
+    </select>
+
+    <delete id="delUserType" parameterType="Long">
+        delete from `user_type` where id = #{id}
+    </delete>
+
+    <update id="updateUserType" parameterType="com.xie.myblog.po.UserType">
+        update `user_type`
+        set `name` = #{name}
+        where id = #{id}
+    </update>
+
+    <insert id="addUserType" parameterType="com.xie.myblog.po.UserType">
+        insert into `user_type`(`name`) values(#{name})
+    </insert>
+</mapper>

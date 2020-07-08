@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xie.myblog.dao.FriendLinkDao">
+    <resultMap id="friendLinkMap" type="com.xie.myblog.po.FriendLink">
+        <id property="friendLinkId" column="friendLinkId"/>
+        <result property="blogName" column="blogName"/>
+        <result property="blogAddress" column="blogAddress"/>
+        <result property="blogPicture" column="blogPicture"/>
+        <result property="createTime" column="createTime"/>
+        <result property="description" column="description"/>
+    </resultMap>
+
+    <select id="selectFriendAll" resultMap="friendLinkMap" parameterType="String">
+        select * from `friendlink`
+        <where>
+            <if test="blogName != null and blogName != ''">
+                blogName like concat('%',#{blogName},'%')
+            </if>
+        </where>
+    </select>
+
+    <insert id="addFriendLink" parameterType="com.xie.myblog.po.FriendLink">
+        insert into `friendlink`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="blogName != null">
+                blogName,
+            </if>
+            <if test="blogAddress != null">
+                blogAddress,
+            </if>
+            <if test="blogPicture != null">
+                blogPicture,
+            </if>
+            <if test="createTime != null">
+                createTime,
+            </if>
+            <if test="description != null">
+                description,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="blogName != null">
+                #{blogName},
+            </if>
+            <if test="blogAddress != null">
+                #{blogAddress},
+            </if>
+            <if test="blogPicture != null">
+                #{blogPicture},
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+            <if test="description != null">
+                #{description},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateFriendLink" parameterType="com.xie.myblog.po.FriendLink">
+        update `friendlink`
+        <set>
+            <if test="blogName != null">
+                blogName = #{blogName},
+            </if>
+            <if test="blogAddress != null">
+                blogAddress = #{blogAddress},
+            </if>
+            <if test="blogPicture != null">
+                blogPicture = #{blogPicture},
+            </if>
+            <if test="createTime != null">
+                createTime = #{createTime},
+            </if>
+            <if test="description != null">
+                description = #{description},
+            </if>
+        </set>
+        where friendLinkId = #{friendLinkId}
+    </update>
+
+    <delete id="delFriendLink" parameterType="Long">
+        delete from `friendlink` where friendLinkId = #{friendLinkId}
+    </delete>
+
+    <select id="selectLinkById" resultType="com.xie.myblog.po.FriendLink" parameterType="Long">
+        select * from `friendlink` where friendLinkId = #{friendLinkId}
+    </select>
+</mapper>

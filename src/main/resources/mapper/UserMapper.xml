@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xie.myblog.dao.UserDao">
+    <resultMap id="userMap" type="com.xie.myblog.po.User">
+        <id property="userId" column="userId"/>
+        <result property="nickName" column="nickName"/>
+        <result property="userName" column="userName"/>
+        <result property="password" column="password"/>
+        <result property="email" column="email"/>
+        <result property="typeId" column="typeId"/>
+        <result property="avatar" column="avatar"/>
+        <result property="createTime" column="createTime"/>
+        <result property="updateTime" column="updateTime"/>
+        <result property="delStatus" column="delStatus"/>
+        <association property="userType" javaType="com.xie.myblog.po.UserType">
+            <id property="id" column="id"/>
+            <result property="name" column="name"/>
+        </association>
+    </resultMap>
+
+    <select id="selectUserAll" resultMap="userMap" parameterType="map">
+        select * from `user`
+        inner join `user_type` on `user`.typeId = `user_type`.id
+        <where>
+            <if test="typeId != null">
+                and typeId = #{typeId}
+            </if>
+            <if test="name != null and name != ''">
+                and concat(nickName,userName)  like concat('%',#{name},'%')
+            </if>
+<!--            <if test="name != null and name != ''">-->
+<!--                and nickName like concat('%',#{name},'%')-->
+<!--                or userName like concat('%',#{name},'%')-->
+<!--            </if>-->
+        </where>
+        order by userId desc
+    </select>
+
+    <select id="selectAdminAll" resultMap="userMap">
+        select * from `user`
+        inner join `user_type` on `user`.typeId = `user_type`.id
+        where `user`.typeId != 3 and delStatus = 0
+    </select>
+
+    <select id="selectUserByUserId" resultMap="userMap" parameterType="Long">
+        select * from `user`
+        inner join `user_type` on `user`.typeId = `user_type`.id
+        where userId = #{userId}
+    </select>
+
+    <update id="delUser">
+        update `user` set delStatus = #{delStatus} where userId = #{userId}
+    </update>
+
+    <update id="updateUserSelect" parameterType="com.xie.myblog.po.User">
+        update `user`
+        <set>
+            <if test="nickName != null">
+                nickName = #{nickName},
+            </if>
+            <if test="userName != null">
+                userName = #{userName},
+            </if>
+            <if test="password != null">
+                password = #{password},
+            </if>
+            <if test="email != null">
+                email = #{email},
+            </if>
+            <if test="typeId != null">
+                typeId = #{typeId},
+            </if>
+            <if test="avatar != null">
+                avatar = #{avatar},
+            </if>
+            <if test="createTime != null">
+                createTime = #{createTime},
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime},
+            </if>
+            <if test="delStatus != null">
+                delStatus = #{delStatus},
+            </if>
+        </set>
+        where userId = #{userId}
+    </update>
+
+    <insert id="addUser" parameterType="com.xie.myblog.po.User">
+        insert into `user`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="nickName != null">
+                nickName,
+            </if>
+            <if test="userName != null">
+                userName,
+            </if>
+            <if test="password != null">
+                password,
+            </if>
+            <if test="email != null">
+                email,
+            </if>
+            <if test="typeId != null">
+                typeId,
+            </if>
+            <if test="avatar != null">
+                avatar,
+            </if>
+            <if test="createTime != null">
+                createTime,
+            </if>
+            <if test="updateTime != null">
+                updateTime,
+            </if>
+            <if test="delStatus != null">
+                delStatus,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="nickName != null">
+                #{nickName},
+            </if>
+            <if test="userName != null">
+                #{userName},
+            </if>
+            <if test="password != null">
+                #{password},
+            </if>
+            <if test="email != null">
+                #{email},
+            </if>
+            <if test="typeId != null">
+                #{typeId},
+            </if>
+            <if test="avatar != null">
+                #{avatar},
+            </if>
+            <if test="createTime != null">
+                #{createTime}
+            </if>
+            <if test="updateTime != null">
+                #{updateTime}
+            </if>
+            <if test="delStatus != null">
+                #{delStatus}
+            </if>
+        </trim>
+    </insert>
+
+    <select id="login" parameterType="String" resultType="com.xie.myblog.po.User">
+        select userId,typeId,delStatus from `user`
+        where userName = #{userName} and password = #{password}
+    </select>
+
+    <select id="adminLogin" parameterType="String" resultType="com.xie.myblog.po.User">
+        select userId,typeId,delStatus from `user`
+        where userName = #{userName} and password = #{password} and typeId != 3
+    </select>
+
+    <select id="selectUserCount" parameterType="Long" resultType="Integer">
+        select count(1) from `user` where typeId = #{typeId}
+    </select>
+
+    <select id="isUserName" parameterType="String" resultType="Integer">
+        select count(1) from `user` where userName = #{userName}
+    </select>
+</mapper>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xie.myblog.dao.BlogDao">
+    <resultMap id="blogMap" type="com.xie.myblog.po.Blog">
+        <id property="blogId" column="blogId"/>
+        <result property="title" column="title"/>
+        <result property="content" column="content"/>
+        <result property="firstPicture" column="firstPicture"/>
+        <result property="flag" column="flag"/>
+        <result property="views" column="views"/>
+        <result property="commentCount" column="commentCount"/>
+        <result property="appreciation" column="appreciation"/>
+        <result property="shareStatement" column="shareStatement"/>
+        <result property="commentBled" column="commentBled"/>
+        <result property="published" column="published"/>
+        <result property="recommend" column="recommend"/>
+        <result property="createTime" column="createTime"/>
+        <result property="updateTime" column="updateTime"/>
+        <result property="description" column="description"/>
+        <result property="typeId" column="typeId"/>
+        <result property="userId" column="userId"/>
+        <association property="blogType" javaType="com.xie.myblog.po.BlogType">
+            <id property="id" column="id"/>
+            <result property="name" column="name"/>
+        </association>
+        <association property="user" javaType="com.xie.myblog.po.User">
+            <id property="userId" column="userId"/>
+            <result property="nickName" column="nickName"/>
+            <result property="userName" column="userName"/>
+            <result property="email" column="email"/>
+            <result property="avatar" column="avatar"/>
+        </association>
+    </resultMap>
+
+    <select id="selectBlogAll" resultMap="blogMap" parameterType="map">
+        select * from `blog`
+        inner join `blog_type` on `blog`.typeId = `blog_type`.id
+        inner join `user` on `blog`.userId = `user`.userId
+        <where>
+            <if test="recommend != null and recommend == false">
+                and recommend = 0
+            </if>
+            <if test="typeId != null">
+                and `blog`.typeId = #{typeId}
+            </if>
+            <if test="searchStr != null and searchStr != ''">
+                and concat(title,description) like concat('%',#{searchStr},'%')
+            </if>
+        </where>
+        order by `blog`.createTime desc
+    </select>
+
+    <select id="searchBlog" resultMap="blogMap" parameterType="String">
+        select * from `blog`
+        inner join `blog_type` on `blog`.typeId = `blog_type`.id
+        inner join `user` on `blog`.userId = `user`.userId
+        <where>
+            published = 1
+            <if test="searchStr != null and searchStr != ''">
+                and concat(title,description) like concat('%',#{searchStr},'%')
+            </if>
+        </where>
+        order by `blog`.createTime desc
+    </select>
+
+    <select id="selectRecommend" resultMap="blogMap">
+        select * from `blog`
+        inner join `blog_type` on `blog`.typeId = `blog_type`.id
+        inner join `user` on `blog`.userId = `user`.userId
+        where recommend = 1
+        order by `blog`.createTime desc
+        limit 4
+    </select>
+
+    <select id="selectPublished" resultMap="blogMap">
+        select * from `blog`
+        inner join `blog_type` on `blog`.typeId = `blog_type`.id
+        inner join `user` on `blog`.userId = `user`.userId
+        <where>
+            published = 1
+            <if test="typeId != null and typeId != ''">
+                and `blog`.typeId = #{typeId}
+            </if>
+        </where>
+        order by `blog`.createTime desc
+    </select>
+
+    <insert id="addBlog" parameterType="com.xie.myblog.po.Blog">
+        insert into `blog`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="title != null">
+                title,
+            </if>
+            <if test="content != null">
+                content,
+            </if>
+            <if test="firstPicture != null">
+                firstPicture,
+            </if>
+            <if test="flag != null">
+                flag,
+            </if>
+            <if test="appreciation != null">
+                appreciation,
+            </if>
+            <if test="shareStatement != null">
+                shareStatement,
+            </if>
+            <if test="commentBled != null">
+                commentBled,
+            </if>
+            <if test="published != null">
+                published,
+            </if>
+            <if test="recommend != null">
+                recommend,
+            </if>
+            <if test="createTime != null">
+                createTime,
+            </if>
+            <if test="description != null">
+                description,
+            </if>
+            <if test="typeId != null">
+                typeId,
+            </if>
+            <if test="userId != null">
+                userId,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="title != null">
+                #{title},
+            </if>
+            <if test="content != null">
+                #{content},
+            </if>
+            <if test="firstPicture != null">
+                #{firstPicture},
+            </if>
+            <if test="flag != null">
+                #{flag},
+            </if>
+            <if test="appreciation != null and appreciation == true">
+                1,
+            </if>
+            <if test="appreciation != null and appreciation == false">
+                0,
+            </if>
+            <if test="shareStatement != null and shareStatement == true">
+                1,
+            </if>
+            <if test="shareStatement != null and shareStatement == false">
+                0,
+            </if>
+            <if test="commentBled != null and commentBled == true">
+                1,
+            </if>
+            <if test="commentBled != null and commentBled == false">
+                0,
+            </if>
+            <if test="published != null and published == true">
+                1,
+            </if>
+            <if test="published != null and published == false">
+                0,
+            </if>
+            <if test="recommend != null and recommend == true">
+                1,
+            </if>
+            <if test="recommend != null and recommend == false">
+                0,
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+            <if test="description != null">
+                #{description},
+            </if>
+            <if test="typeId != null">
+                #{typeId},
+            </if>
+            <if test="userId != null">
+                #{userId},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateBlog" parameterType="com.xie.myblog.po.Blog">
+        update `blog`
+        <set>
+            <if test="title != null">
+                title = #{title},
+            </if>
+            <if test="content != null">
+                content = #{content},
+            </if>
+            <if test="firstPicture != null">
+                firstPicture = #{firstPicture},
+            </if>
+            <if test="flag != null">
+                flag = #{flag},
+            </if>
+            <if test="appreciation != null and appreciation == true">
+                appreciation = 1,
+            </if>
+            <if test="appreciation != null and appreciation == false">
+                appreciation = 0,
+            </if>
+            <if test="shareStatement != null and shareStatement == true">
+                shareStatement = 1,
+            </if>
+            <if test="shareStatement != null and shareStatement == false">
+                shareStatement = 0,
+            </if>
+            <if test="commentBled != null and commentBled == true">
+                commentBled = 1,
+            </if>
+            <if test="commentBled != null and commentBled == false">
+                commentBled = 0,
+            </if>
+            <if test="recommend != null and recommend == true">
+                recommend = 1,
+            </if>
+            <if test="recommend != null and recommend == false">
+                recommend = 0,
+            </if>
+            <if test="published != null and published == true">
+                published = 1,
+            </if>
+            <if test="published != null and published == false">
+                published = 0,
+            </if>
+            <if test="updateTime != null">
+                updateTime = #{updateTime},
+            </if>
+            <if test="description != null">
+                description = #{description},
+            </if>
+            <if test="typeId != null">
+                typeId = #{typeId},
+            </if>
+        </set>
+        where blogId = #{blogId}
+    </update>
+
+    <delete id="delBlog" parameterType="Long">
+        delete from `blog` where blogId = #{blogId}
+    </delete>
+
+    <select id="blogCount" resultType="Integer">
+        select count(1) from `blog`
+        <where>
+            published = 1
+            <if test="typeId != null and typeId != ''">
+                and typeId = #{typeId}
+            </if>
+            <if test="searchStr != null and searchStr != ''">
+                and concat(title,description) like concat('%',#{searchStr},'%')
+            </if>
+        </where>
+    </select>
+
+    <update id="addViews" parameterType="Long">
+        update `blog` set views = views+1 where blogId = #{blogId}
+    </update>
+
+    <update id="addCommentCount" parameterType="Long">
+        update `blog` set commentCount = commentCount+1 where blogId = #{blogId}
+    </update>
+
+    <select id="selectBlogById" parameterType="Long" resultMap="blogMap">
+        select * from `blog`
+        inner join `blog_type` on `blog`.typeId = `blog_type`.id
+        inner join `user` on `blog`.userId = `user`.userId
+        where `blog`.blogId = #{blogId}
+    </select>
+
+    <select id="selectArchives" resultType="com.xie.myblog.po.Blog">
+        select blogId,title,createTime,firstPicture,description from `blog`
+        where published = 1
+        order by createTime desc
+    </select>
+</mapper>

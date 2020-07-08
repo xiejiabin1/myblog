@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xie.myblog.dao.CommentDao">
+    <resultMap id="commentMap" type="com.xie.myblog.po.Comment">
+        <id property="commentId" column="commentId"/>
+        <result property="blogId" column="blogId"/>
+        <result property="userId" column="userId"/>
+        <result property="parentCommentId" column="parentCommentId"/>
+        <result property="content" column="content"/>
+        <result property="adminComment" column="adminComment"/>
+        <result property="createTime" column="createTime"/>
+        <association property="user" javaType="com.xie.myblog.po.User">
+            <id property="userId" column="userId"/>
+            <result property="nickName" column="nickName"/>
+            <result property="typeId" column="typeId"/>
+            <result property="avatar" column="avatar"/>
+        </association>
+    </resultMap>
+
+    <select id="selectCommentByParent" resultMap="commentMap" parameterType="Long">
+        select * from `comment`
+        inner join `user` on `user`.userId = `comment`.userId
+        where parentCommentId = #{parentCommentId} and blogId = #{blogId}
+    </select>
+
+    <select id="selectReplayOne" resultMap="commentMap" parameterType="Long">
+        select * from `comment`
+        inner join `user` on `user`.userId = `comment`.userId
+        where parentCommentId = #{commentId} and blogId = #{blogId}
+    </select>
+
+    <select id="selectReplayTwoList" resultMap="commentMap" parameterType="Long">
+        select * from `comment`
+        inner join `user` on `user`.userId = `comment`.userId
+        where parentCommentId = #{childCommentId} and blogId = #{blogId}
+    </select>
+
+    <insert id="addComment" parameterType="com.xie.myblog.po.Comment">
+        insert into `comment`
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="blogId != null">
+                blogId,
+            </if>
+            <if test="userId != null">
+                userId,
+            </if>
+            <if test="parentCommentId != null">
+                parentCommentId,
+            </if>
+            <if test="content != null">
+                content,
+            </if>
+            <if test="adminComment != null ">
+                adminComment,
+            </if>
+            <if test="createTime != null">
+                createTime,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="blogId != null">
+                #{blogId},
+            </if>
+            <if test="userId != null">
+                #{userId},
+            </if>
+            <if test="parentCommentId != null">
+                #{parentCommentId},
+            </if>
+            <if test="content != null">
+                #{content},
+            </if>
+            <if test="adminComment != null and adminComment == true">
+                1,
+            </if>
+            <if test="adminComment != null and adminComment == false">
+                0,
+            </if>
+            <if test="createTime != null">
+                #{createTime},
+            </if>
+        </trim>
+    </insert>
+
+    <select id="selectCommentById" resultMap="commentMap" parameterType="Long">
+        select `user`.nickName,`comment`.userId,`user`.typeId,`user`.avatar from `comment`
+        inner join `user` on `user`.userId = `comment`.userId
+        where commentId = #{commentId}
+    </select>
+
+    <select id="selectCount" resultType="Integer">
+        select count(1) from `comment`
+    </select>
+</mapper>
