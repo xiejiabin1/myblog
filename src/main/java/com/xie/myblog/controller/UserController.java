@@ -81,13 +81,13 @@ public class UserController {
                 ftpConfig.setPassword("Xie123");
                 try {
                     //上传图片
-                    FtpUtil.upload(ftpConfig, "/myblog/", file.getInputStream(), newName);
+                    FtpUtil.upload(ftpConfig, "/avatar/", file.getInputStream(), newName);
                     String fileName = user.getAvatar();
                     if (fileName != null) {
                         String str = "default.jpg";
                         if (!str.equals(fileName)) {
                             //删除原图片
-                            FtpUtil.deleteFile(ftpConfig, "/myblog/", fileName);
+                            FtpUtil.deleteFile(ftpConfig, "/avatar/", fileName);
                         }
                     }
                 } catch (IOException e) {
@@ -136,7 +136,7 @@ public class UserController {
                 ftpConfig.setPassword("Xie123");
                 try {
                     //上传图片
-                    FtpUtil.upload(ftpConfig, "/myblog/", file.getInputStream(), newName);
+                    FtpUtil.upload(ftpConfig, "/avatar/", file.getInputStream(), newName);
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
