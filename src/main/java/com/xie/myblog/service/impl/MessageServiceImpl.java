@@ -135,7 +135,7 @@ public class MessageServiceImpl implements MessageService {
                 try {
                     MailSendUtil.sendHtmlMail(info);
                 } catch (Exception e) {
-                    System.out.print("'"+message.getMessageId()+"'的邮件发送失败！");
+                    System.out.print("邮件发送失败！");
                     e.printStackTrace();
                 }
             }

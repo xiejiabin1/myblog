@@ -78,7 +78,7 @@
     </insert>
 
     <select id="selectMessageById" resultMap="messageMap" parameterType="Long">
-        select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content from `message`
+        select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message`
         inner join `user` on `user`.userId = `message`.userId
         where messageId = #{messageId}
     </select>
