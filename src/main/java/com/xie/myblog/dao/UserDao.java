@@ -81,4 +81,10 @@ public interface UserDao {
      */
     int isUserName(@Param("userName") String userName);
 
+    /**
+     * 查询用户昵称和邮箱
+     * @param userId
+     * @return
+     */
+    User getUserById(@Param("userId") Long userId);
 }

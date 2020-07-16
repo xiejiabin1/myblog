@@ -167,4 +167,8 @@
     <select id="isUserName" parameterType="String" resultType="Integer">
         select count(1) from `user` where userName = #{userName}
     </select>
+
+    <select id="getUserById" parameterType="Long" resultType="com.xie.myblog.po.User">
+        select userId,nickName,email from `user` where userId = #{userId}
+    </select>
 </mapper>

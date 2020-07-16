@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
+import java.sql.Timestamp;
 import java.util.List;
 
 /**
@@ -42,6 +43,7 @@ public class FriendLinkServiceImpl implements FriendLinkService {
     @Transactional
     @Override
     public boolean addFriendLink(FriendLink friendLink) {
+        friendLink.setCreateTime(new Timestamp(System.currentTimeMillis()));
         return friendLinkDao.addFriendLink(friendLink)>0 ? true : false;
     }
 
