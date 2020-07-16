@@ -55,7 +55,7 @@ public class MailSendUtil {
         //接受消息的人
         message.setReplyTo(InternetAddress.parse(info.getReplayAddress()));
         //消息的发送者
-        message.setFrom(new InternetAddress(p.getProperty("mail.smtp.user"), "先谢郭嘉"));
+        message.setFrom(new InternetAddress(p.getProperty("mail.smtp.user"), "先谢郭嘉の留言提醒"));
         // 创建邮件的接收者地址，并设置到邮件消息中
         message.setRecipient(Message.RecipientType.TO, new InternetAddress(info.getToAddress()));
         // 消息发送的时间
