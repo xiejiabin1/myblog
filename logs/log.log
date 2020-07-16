@@ -1,0 +1,894 @@
+2020-07-16 18:01:32.659 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplication : 55 ] - Starting MyblogApplication on WIN-02HR91NMKMS with PID 14224 (F:\Java\idea\space\myblog\target\classes started by Administrator in F:\Java\idea\space\myblog)
+2020-07-16 18:01:32.662 [ main ] - [ DEBUG ] [ com.xie.myblog.MyblogApplication : 56 ] - Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-07-16 18:01:32.663 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplication : 651 ] - No active profile set, falling back to default profiles: default
+2020-07-16 18:01:33.459 [ main ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 105 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-07-16 18:01:33.463 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\BlogDao.class]
+2020-07-16 18:01:33.464 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\BlogTypeDao.class]
+2020-07-16 18:01:33.464 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\CommentDao.class]
+2020-07-16 18:01:33.465 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\CountDao.class]
+2020-07-16 18:01:33.465 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\FriendLinkDao.class]
+2020-07-16 18:01:33.465 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\MessageDao.class]
+2020-07-16 18:01:33.466 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\UserDao.class]
+2020-07-16 18:01:33.466 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\UserTypeDao.class]
+2020-07-16 18:01:33.467 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'blogDao' and 'com.xie.myblog.dao.BlogDao' mapperInterface
+2020-07-16 18:01:33.468 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'blogDao'.
+2020-07-16 18:01:33.468 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'blogTypeDao' and 'com.xie.myblog.dao.BlogTypeDao' mapperInterface
+2020-07-16 18:01:33.468 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'blogTypeDao'.
+2020-07-16 18:01:33.469 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'commentDao' and 'com.xie.myblog.dao.CommentDao' mapperInterface
+2020-07-16 18:01:33.469 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'commentDao'.
+2020-07-16 18:01:33.469 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'countDao' and 'com.xie.myblog.dao.CountDao' mapperInterface
+2020-07-16 18:01:33.469 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'countDao'.
+2020-07-16 18:01:33.470 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'friendLinkDao' and 'com.xie.myblog.dao.FriendLinkDao' mapperInterface
+2020-07-16 18:01:33.470 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'friendLinkDao'.
+2020-07-16 18:01:33.470 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'messageDao' and 'com.xie.myblog.dao.MessageDao' mapperInterface
+2020-07-16 18:01:33.470 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'messageDao'.
+2020-07-16 18:01:33.471 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userDao' and 'com.xie.myblog.dao.UserDao' mapperInterface
+2020-07-16 18:01:33.471 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-07-16 18:01:33.471 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userTypeDao' and 'com.xie.myblog.dao.UserTypeDao' mapperInterface
+2020-07-16 18:01:33.471 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userTypeDao'.
+2020-07-16 18:01:33.948 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-16 18:01:33.949 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-07-16 18:01:33.949 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-16 18:01:34.043 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-07-16 18:01:34.161 [ main ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 946 ] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-07-16 18:01:34.411 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\BlogMapper.xml]'
+2020-07-16 18:01:34.422 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\BlogTypeMapper.xml]'
+2020-07-16 18:01:34.434 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\CommentMapper.xml]'
+2020-07-16 18:01:34.440 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\CountMapper.xml]'
+2020-07-16 18:01:34.450 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\FriendLinkMapper.xml]'
+2020-07-16 18:01:34.460 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\MessageMapper.xml]'
+2020-07-16 18:01:34.475 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\UserMapper.xml]'
+2020-07-16 18:01:34.483 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\UserTypeMapper.xml]'
+2020-07-16 18:01:34.950 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-07-16 18:01:35.131 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplication : 61 ] - Started MyblogApplication in 3.323 seconds (JVM running for 6.849)
+2020-07-16 18:01:41.431 [ http-nio-8080-exec-2 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-16 18:01:41.502 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:41.502 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:41.518 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cb1a8eb] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:41.519 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@646fe8dd] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:41.540 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1066 ] - HikariPool-1 - configuration:
+2020-07-16 18:01:41.545 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - allowPoolSuspension.............false
+2020-07-16 18:01:41.546 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - autoCommit......................true
+2020-07-16 18:01:41.547 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - catalog.........................none
+2020-07-16 18:01:41.548 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - connectionInitSql...............none
+2020-07-16 18:01:41.548 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - connectionTestQuery.............none
+2020-07-16 18:01:41.549 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - connectionTimeout...............30000
+2020-07-16 18:01:41.550 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - dataSource......................none
+2020-07-16 18:01:41.551 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - dataSourceClassName.............none
+2020-07-16 18:01:41.552 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - dataSourceJNDI..................none
+2020-07-16 18:01:41.553 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - dataSourceProperties............{password=<masked>}
+2020-07-16 18:01:41.554 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - driverClassName................."com.mysql.cj.jdbc.Driver"
+2020-07-16 18:01:41.554 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - exceptionOverrideClassName......none
+2020-07-16 18:01:41.555 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - healthCheckProperties...........{}
+2020-07-16 18:01:41.555 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - healthCheckRegistry.............none
+2020-07-16 18:01:41.556 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - idleTimeout.....................600000
+2020-07-16 18:01:41.557 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - initializationFailTimeout.......1
+2020-07-16 18:01:41.558 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - isolateInternalQueries..........false
+2020-07-16 18:01:41.559 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - jdbcUrl.........................jdbc:mysql://localhost/myblog?characterEncoding=utf8&serverTimezone=GMT%2B8&useSSl=true
+2020-07-16 18:01:41.559 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - leakDetectionThreshold..........0
+2020-07-16 18:01:41.560 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - maxLifetime.....................1800000
+2020-07-16 18:01:41.560 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - maximumPoolSize.................10
+2020-07-16 18:01:41.561 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - metricRegistry..................none
+2020-07-16 18:01:41.561 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - metricsTrackerFactory...........none
+2020-07-16 18:01:41.562 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - minimumIdle.....................10
+2020-07-16 18:01:41.562 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - password........................<masked>
+2020-07-16 18:01:41.562 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - poolName........................"HikariPool-1"
+2020-07-16 18:01:41.563 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - readOnly........................false
+2020-07-16 18:01:41.563 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - registerMbeans..................false
+2020-07-16 18:01:41.563 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - scheduledExecutor...............none
+2020-07-16 18:01:41.563 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - schema..........................none
+2020-07-16 18:01:41.564 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - threadFactory...................internal
+2020-07-16 18:01:41.564 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - transactionIsolation............default
+2020-07-16 18:01:41.564 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - username........................"root"
+2020-07-16 18:01:41.565 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - validationTimeout...............5000
+2020-07-16 18:01:41.565 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-07-16 18:01:41.797 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:41.798 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523fe795] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:42.713 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 564 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@309ed7ea
+2020-07-16 18:01:42.718 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-07-16 18:01:42.739 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@852834980 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will not be managed by Spring
+2020-07-16 18:01:42.755 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@75854665
+2020-07-16 18:01:42.756 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@886932107 wrapping com.mysql.cj.jdbc.ConnectionImpl@75854665] will not be managed by Spring
+2020-07-16 18:01:42.759 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.addCount : 137 ] - ==>  Preparing: update `count` set `counts` = `counts`+1
+2020-07-16 18:01:42.759 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectRecommend : 137 ] - ==>  Preparing: select * from `blog` inner join `blog_type` on `blog`.typeId = `blog_type`.id inner join `user` on `blog`.userId = `user`.userId where recommend = 1 order by `blog`.createTime desc limit 4
+2020-07-16 18:01:42.781 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@34b84c5e
+2020-07-16 18:01:42.796 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:42.796 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@720fa0ba] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:42.799 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@2093502603 wrapping com.mysql.cj.jdbc.ConnectionImpl@34b84c5e] will not be managed by Spring
+2020-07-16 18:01:42.800 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==>  Preparing: select * from `count`
+2020-07-16 18:01:42.800 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ SQL_CACHE : 60 ] - Cache Hit Ratio [SQL_CACHE]: 0.0
+2020-07-16 18:01:42.802 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:42.803 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78dacf27] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:42.810 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:42.810 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@684ee01c] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:42.817 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c6bfb5
+2020-07-16 18:01:42.817 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1981623884 wrapping com.mysql.cj.jdbc.ConnectionImpl@5c6bfb5] will not be managed by Spring
+2020-07-16 18:01:42.818 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `comment`
+2020-07-16 18:01:42.845 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=4, active=4, idle=0, waiting=1)
+2020-07-16 18:01:42.850 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5497b311
+2020-07-16 18:01:42.853 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@93597020 wrapping com.mysql.cj.jdbc.ConnectionImpl@5497b311] will not be managed by Spring
+2020-07-16 18:01:42.854 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:01:42.855 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==>  Preparing: select count(1) from `blog` WHERE published = 1
+2020-07-16 18:01:42.858 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectRecommend : 137 ] - ==> Parameters: 
+2020-07-16 18:01:42.870 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:01:42.875 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==> Parameters: 
+2020-07-16 18:01:42.882 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4575e7c1
+2020-07-16 18:01:42.882 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.addCount : 137 ] - ==> Parameters: 
+2020-07-16 18:01:42.892 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@661626746 wrapping com.mysql.cj.jdbc.ConnectionImpl@4575e7c1] will not be managed by Spring
+2020-07-16 18:01:42.894 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished_COUNT : 137 ] - ==>  Preparing: SELECT count(0) FROM `blog` INNER JOIN `blog_type` ON `blog`.typeId = `blog_type`.id INNER JOIN `user` ON `blog`.userId = `user`.userId WHERE published = 1
+2020-07-16 18:01:42.895 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished_COUNT : 137 ] - ==> Parameters: 
+2020-07-16 18:01:42.928 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50d90b27
+2020-07-16 18:01:42.949 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51208f4e
+2020-07-16 18:01:42.979 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@122a7b1d
+2020-07-16 18:01:43.015 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished_COUNT : 137 ] - <==      Total: 1
+2020-07-16 18:01:43.016 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectRecommend : 137 ] - <==      Total: 4
+2020-07-16 18:01:43.017 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@646fe8dd]
+2020-07-16 18:01:43.019 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished : 137 ] - ==>  Preparing: select * from `blog` inner join `blog_type` on `blog`.typeId = `blog_type`.id inner join `user` on `blog`.userId = `user`.userId WHERE published = 1 order by `blog`.createTime desc LIMIT ?
+2020-07-16 18:01:43.022 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - <==      Total: 1
+2020-07-16 18:01:43.023 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@684ee01c]
+2020-07-16 18:01:43.033 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:01:43.034 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@720fa0ba]
+2020-07-16 18:01:43.034 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished : 137 ] - ==> Parameters: 10(Integer)
+2020-07-16 18:01:43.041 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:01:43.042 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@78dacf27]
+2020-07-16 18:01:43.051 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished : 137 ] - <==      Total: 7
+2020-07-16 18:01:43.052 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2cb1a8eb]
+2020-07-16 18:01:43.059 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@e43328d
+2020-07-16 18:01:43.061 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.addCount : 137 ] - <==    Updates: 1
+2020-07-16 18:01:43.065 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@523fe795]
+2020-07-16 18:01:43.147 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:43.148 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e958587] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:43.149 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1884451877 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will not be managed by Spring
+2020-07-16 18:01:43.150 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `message`
+2020-07-16 18:01:43.151 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:01:43.210 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:01:43.215 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7e958587]
+2020-07-16 18:01:43.986 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:43.987 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:43.991 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1941326293 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will be managed by Spring
+2020-07-16 18:01:43.992 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:01:43.992 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==> Parameters: 0(Long)
+2020-07-16 18:01:43.996 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - <==      Total: 3
+2020-07-16 18:01:43.998 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:43.999 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16] from current transaction
+2020-07-16 18:01:43.999 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:01:44.000 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 13(Long)
+2020-07-16 18:01:44.003 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 0
+2020-07-16 18:01:44.004 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.004 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16] from current transaction
+2020-07-16 18:01:44.005 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:01:44.006 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:01:44.010 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:01:44.011 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.011 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16] from current transaction
+2020-07-16 18:01:44.012 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:01:44.012 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:01:44.016 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:01:44.017 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.018 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16] from current transaction
+2020-07-16 18:01:44.019 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:01:44.019 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 15(Long)
+2020-07-16 18:01:44.021 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:01:44.022 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.023 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16] from current transaction
+2020-07-16 18:01:44.024 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:01:44.026 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:01:44.030 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:01:44.031 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.032 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16] from current transaction
+2020-07-16 18:01:44.033 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:01:44.034 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:01:44.038 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:01:44.039 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.040 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16] from current transaction
+2020-07-16 18:01:44.041 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:01:44.042 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 17(Long)
+2020-07-16 18:01:44.045 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:01:44.047 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.048 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.049 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.050 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3c533f16]
+2020-07-16 18:01:44.991 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:44.994 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5415f149] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:44.996 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1523717563 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will not be managed by Spring
+2020-07-16 18:01:44.997 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==>  Preparing: select count(1) from `blog` WHERE published = 1
+2020-07-16 18:01:44.998 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:44.998 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==> Parameters: 
+2020-07-16 18:01:44.999 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49d70e81] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:45.005 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - <==      Total: 1
+2020-07-16 18:01:45.006 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1532479776 wrapping com.mysql.cj.jdbc.ConnectionImpl@75854665] will not be managed by Spring
+2020-07-16 18:01:45.007 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==>  Preparing: select * from `count`
+2020-07-16 18:01:45.008 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5415f149]
+2020-07-16 18:01:45.008 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:01:45.015 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:01:45.016 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49d70e81]
+2020-07-16 18:01:45.029 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:45.030 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77c5d775] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:45.030 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:01:45.032 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@316f7e1e] was not registered for synchronization because synchronization is not active
+2020-07-16 18:01:45.037 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1628822035 wrapping com.mysql.cj.jdbc.ConnectionImpl@5497b311] will not be managed by Spring
+2020-07-16 18:01:45.037 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `comment`
+2020-07-16 18:01:45.038 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:01:45.037 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1661234185 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will not be managed by Spring
+2020-07-16 18:01:45.039 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `message`
+2020-07-16 18:01:45.041 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:01:45.048 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:01:45.049 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77c5d775]
+2020-07-16 18:01:45.054 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:01:45.056 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@316f7e1e]
+2020-07-16 18:02:01.822 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:01.824 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c9d33]
+2020-07-16 18:02:01.825 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1670363453 wrapping com.mysql.cj.jdbc.ConnectionImpl@34b84c5e] will be managed by Spring
+2020-07-16 18:02:01.825 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.login : 137 ] - ==>  Preparing: select userId,typeId,delStatus from `user` where userName = ? and password = ?
+2020-07-16 18:02:01.826 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.login : 137 ] - ==> Parameters: 先谢郭嘉(String), 1be8f75abe28693550f8b0dc3bcf944a(String)
+2020-07-16 18:02:01.828 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.login : 137 ] - <==      Total: 1
+2020-07-16 18:02:01.831 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c9d33]
+2020-07-16 18:02:01.832 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c9d33]
+2020-07-16 18:02:01.833 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c9d33]
+2020-07-16 18:02:01.836 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a2c9d33]
+2020-07-16 18:02:02.222 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:02.223 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53c2f041] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:02.225 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@206717313 wrapping com.mysql.cj.jdbc.ConnectionImpl@4575e7c1] will not be managed by Spring
+2020-07-16 18:02:02.226 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectRecommend : 137 ] - ==>  Preparing: select * from `blog` inner join `blog_type` on `blog`.typeId = `blog_type`.id inner join `user` on `blog`.userId = `user`.userId where recommend = 1 order by `blog`.createTime desc limit 4
+2020-07-16 18:02:02.227 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectRecommend : 137 ] - ==> Parameters: 
+2020-07-16 18:02:02.228 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:02.229 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fdf092] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:02.230 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ SQL_CACHE : 60 ] - Cache Hit Ratio [SQL_CACHE]: 0.5
+2020-07-16 18:02:02.233 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1889534053 wrapping com.mysql.cj.jdbc.ConnectionImpl@75854665] will not be managed by Spring
+2020-07-16 18:02:02.234 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectRecommend : 137 ] - <==      Total: 4
+2020-07-16 18:02:02.234 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished_COUNT : 137 ] - ==>  Preparing: SELECT count(0) FROM `blog` INNER JOIN `blog_type` ON `blog`.typeId = `blog_type`.id INNER JOIN `user` ON `blog`.userId = `user`.userId WHERE published = 1
+2020-07-16 18:02:02.235 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53c2f041]
+2020-07-16 18:02:02.235 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished_COUNT : 137 ] - ==> Parameters: 
+2020-07-16 18:02:02.242 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished_COUNT : 137 ] - <==      Total: 1
+2020-07-16 18:02:02.243 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished : 137 ] - ==>  Preparing: select * from `blog` inner join `blog_type` on `blog`.typeId = `blog_type`.id inner join `user` on `blog`.userId = `user`.userId WHERE published = 1 order by `blog`.createTime desc LIMIT ?
+2020-07-16 18:02:02.244 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished : 137 ] - ==> Parameters: 10(Integer)
+2020-07-16 18:02:02.266 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.selectPublished : 137 ] - <==      Total: 7
+2020-07-16 18:02:02.267 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4fdf092]
+2020-07-16 18:02:02.340 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:02.341 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a4671b] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:02.344 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1419504087 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will not be managed by Spring
+2020-07-16 18:02:02.344 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.selectUserByUserId : 137 ] - ==>  Preparing: select * from `user` inner join `user_type` on `user`.typeId = `user_type`.id where userId = ?
+2020-07-16 18:02:02.345 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.selectUserByUserId : 137 ] - ==> Parameters: 430423(Long)
+2020-07-16 18:02:02.348 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.selectUserByUserId : 137 ] - <==      Total: 1
+2020-07-16 18:02:02.349 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@50a4671b]
+2020-07-16 18:02:03.307 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:03.308 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b43197] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:03.310 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:03.312 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69c5a050] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:03.313 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@404166895 wrapping com.mysql.cj.jdbc.ConnectionImpl@75854665] will not be managed by Spring
+2020-07-16 18:02:03.314 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==>  Preparing: select * from `count`
+2020-07-16 18:02:03.315 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:02:03.310 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@2140045238 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will not be managed by Spring
+2020-07-16 18:02:03.316 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==>  Preparing: select count(1) from `blog` WHERE published = 1
+2020-07-16 18:02:03.317 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==> Parameters: 
+2020-07-16 18:02:03.320 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - <==      Total: 1
+2020-07-16 18:02:03.321 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3b43197]
+2020-07-16 18:02:03.322 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:02:03.323 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@69c5a050]
+2020-07-16 18:02:03.348 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:03.349 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c44f828] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:03.352 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@895739050 wrapping com.mysql.cj.jdbc.ConnectionImpl@5497b311] will not be managed by Spring
+2020-07-16 18:02:03.353 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `comment`
+2020-07-16 18:02:03.354 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:02:03.364 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:03.365 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b1583a3] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:03.366 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@291818324 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will not be managed by Spring
+2020-07-16 18:02:03.366 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `message`
+2020-07-16 18:02:03.367 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:02:03.383 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:02:03.385 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1b1583a3]
+2020-07-16 18:02:03.392 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:02:03.393 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c44f828]
+2020-07-16 18:02:06.135 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:06.136 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.137 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1159891466 wrapping com.mysql.cj.jdbc.ConnectionImpl@5c6bfb5] will be managed by Spring
+2020-07-16 18:02:06.138 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:06.138 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==> Parameters: 0(Long)
+2020-07-16 18:02:06.141 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - <==      Total: 3
+2020-07-16 18:02:06.142 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.142 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202] from current transaction
+2020-07-16 18:02:06.143 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:06.143 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 13(Long)
+2020-07-16 18:02:06.146 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 0
+2020-07-16 18:02:06.147 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.149 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202] from current transaction
+2020-07-16 18:02:06.150 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:06.153 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:02:06.156 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:02:06.157 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.157 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202] from current transaction
+2020-07-16 18:02:06.158 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:02:06.159 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:02:06.161 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:02:06.162 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.162 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202] from current transaction
+2020-07-16 18:02:06.163 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:06.163 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 15(Long)
+2020-07-16 18:02:06.165 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:02:06.166 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.166 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202] from current transaction
+2020-07-16 18:02:06.167 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:06.169 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:02:06.172 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:02:06.172 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.173 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202] from current transaction
+2020-07-16 18:02:06.173 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:02:06.174 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:02:06.176 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:02:06.177 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.177 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202] from current transaction
+2020-07-16 18:02:06.178 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:06.179 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 17(Long)
+2020-07-16 18:02:06.181 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:02:06.182 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.183 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.184 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.184 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1e0b1202]
+2020-07-16 18:02:06.257 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:06.257 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d9078d5] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:06.259 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1352400888 wrapping com.mysql.cj.jdbc.ConnectionImpl@34b84c5e] will not be managed by Spring
+2020-07-16 18:02:06.259 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.selectUserByUserId : 137 ] - ==>  Preparing: select * from `user` inner join `user_type` on `user`.typeId = `user_type`.id where userId = ?
+2020-07-16 18:02:06.260 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.selectUserByUserId : 137 ] - ==> Parameters: 430423(Long)
+2020-07-16 18:02:06.262 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.selectUserByUserId : 137 ] - <==      Total: 1
+2020-07-16 18:02:06.263 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7d9078d5]
+2020-07-16 18:02:07.189 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:07.189 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:07.189 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c5855e9] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:07.190 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ce27c21] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:07.192 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1828761233 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will not be managed by Spring
+2020-07-16 18:02:07.192 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==>  Preparing: select * from `count`
+2020-07-16 18:02:07.193 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:02:07.192 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1965453939 wrapping com.mysql.cj.jdbc.ConnectionImpl@75854665] will not be managed by Spring
+2020-07-16 18:02:07.195 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:02:07.196 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==>  Preparing: select count(1) from `blog` WHERE published = 1
+2020-07-16 18:02:07.196 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c5855e9]
+2020-07-16 18:02:07.197 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==> Parameters: 
+2020-07-16 18:02:07.204 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:07.205 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - <==      Total: 1
+2020-07-16 18:02:07.205 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@694deaef] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:07.206 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3ce27c21]
+2020-07-16 18:02:07.206 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1671567031 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will not be managed by Spring
+2020-07-16 18:02:07.206 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `message`
+2020-07-16 18:02:07.207 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:02:07.211 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:07.212 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b9c0a51] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:07.213 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1907790447 wrapping com.mysql.cj.jdbc.ConnectionImpl@75854665] will not be managed by Spring
+2020-07-16 18:02:07.216 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `comment`
+2020-07-16 18:02:07.216 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:02:07.219 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:02:07.222 [ http-nio-8080-exec-10 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@694deaef]
+2020-07-16 18:02:07.230 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:02:07.231 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b9c0a51]
+2020-07-16 18:02:10.045 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:10.045 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@621dc77b] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:10.047 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@533221492 wrapping com.mysql.cj.jdbc.ConnectionImpl@75854665] will not be managed by Spring
+2020-07-16 18:02:10.047 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:02:10.049 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 13(Long)
+2020-07-16 18:02:10.053 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:02:10.053 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@621dc77b]
+2020-07-16 18:02:10.054 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:10.055 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e01746c] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:10.055 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1655394504 wrapping com.mysql.cj.jdbc.ConnectionImpl@75854665] will not be managed by Spring
+2020-07-16 18:02:10.056 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.getUserById : 137 ] - ==>  Preparing: select userId,nickName,email from `user` where userId = ?
+2020-07-16 18:02:10.057 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.getUserById : 137 ] - ==> Parameters: 430423(Long)
+2020-07-16 18:02:10.060 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.getUserById : 137 ] - <==      Total: 1
+2020-07-16 18:02:10.061 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e01746c]
+2020-07-16 18:02:12.223 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:12.224 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a51cb20] was not registered for synchronization because synchronization is not active
+2020-07-16 18:02:12.231 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@492379280 wrapping com.mysql.cj.jdbc.ConnectionImpl@75854665] will not be managed by Spring
+2020-07-16 18:02:12.232 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.addMessage : 137 ] - ==>  Preparing: insert into `message` ( userId, parentMessageId, content, adminMessage, createTime ) values ( ?, ?, ?, 1, ? )
+2020-07-16 18:02:12.237 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.addMessage : 137 ] - ==> Parameters: 430423(Long), 13(Long), 111(String), 2020-07-16 18:02:10.045(Timestamp)
+2020-07-16 18:02:12.262 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.addMessage : 137 ] - <==    Updates: 1
+2020-07-16 18:02:12.263 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5a51cb20]
+2020-07-16 18:02:12.309 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:02:12.311 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.315 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1175546 wrapping com.mysql.cj.jdbc.ConnectionImpl@309ed7ea] will be managed by Spring
+2020-07-16 18:02:12.316 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:12.318 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==> Parameters: 0(Long)
+2020-07-16 18:02:12.325 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - <==      Total: 3
+2020-07-16 18:02:12.326 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.326 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0] from current transaction
+2020-07-16 18:02:12.327 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:12.327 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 13(Long)
+2020-07-16 18:02:12.330 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:02:12.332 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.333 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0] from current transaction
+2020-07-16 18:02:12.334 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:02:12.335 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 13(Long)
+2020-07-16 18:02:12.338 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:02:12.338 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.339 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0] from current transaction
+2020-07-16 18:02:12.339 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:12.340 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 23(Long)
+2020-07-16 18:02:12.342 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:02:12.343 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.343 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0] from current transaction
+2020-07-16 18:02:12.343 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:12.344 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:02:12.347 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:02:12.347 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.349 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0] from current transaction
+2020-07-16 18:02:12.350 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:02:12.351 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:02:12.358 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:02:12.358 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.359 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0] from current transaction
+2020-07-16 18:02:12.360 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:12.362 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 15(Long)
+2020-07-16 18:02:12.367 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:02:12.368 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.368 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0] from current transaction
+2020-07-16 18:02:12.369 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:12.369 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:02:12.373 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:02:12.374 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.374 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0] from current transaction
+2020-07-16 18:02:12.374 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:02:12.375 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:02:12.377 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:02:12.377 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.378 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0] from current transaction
+2020-07-16 18:02:12.378 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:02:12.379 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 17(Long)
+2020-07-16 18:02:12.381 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:02:12.382 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.383 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.385 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.385 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@550ebca0]
+2020-07-16 18:02:12.852 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:02:12.852 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:02:42.855 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:02:42.856 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:03:12.858 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:03:12.859 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:03:42.862 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:03:42.862 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:04:12.864 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:04:12.864 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:04:42.866 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:04:42.866 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:05:12.868 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:05:12.869 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:05:42.872 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:05:42.872 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:06:12.874 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:06:12.874 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:06:42.876 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:06:42.876 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:07:12.878 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:07:12.878 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:07:42.880 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:07:42.880 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:08:12.882 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:08:12.882 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:08:42.894 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:08:42.898 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:09:12.900 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:09:12.901 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:09:42.902 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:09:42.902 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:10:12.904 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:10:12.905 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:10:42.907 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:10:42.907 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:11:12.909 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:11:12.909 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:11:42.912 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:11:42.912 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:12:12.914 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:12:12.914 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:12:42.916 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:12:42.916 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:13:12.918 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:13:12.918 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:13:42.920 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:13:42.920 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:14:12.922 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:14:12.924 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:14:42.926 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:14:42.926 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:15:12.928 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:15:12.928 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:15:42.930 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:15:42.930 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:16:12.932 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:16:12.933 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:16:42.935 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:16:42.935 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:17:12.937 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:17:12.937 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:17:42.938 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:17:42.938 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:18:12.940 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:18:12.940 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:18:42.942 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:18:42.943 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:19:12.945 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:19:12.945 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:19:42.947 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:19:42.947 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:20:12.949 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:20:12.950 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:20:42.955 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:20:42.955 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:21:12.956 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:21:12.957 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:21:42.959 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:21:42.959 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:22:12.961 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:22:12.961 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:22:42.963 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:22:42.963 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:23:12.966 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:23:12.966 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:23:42.968 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:23:42.968 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:24:12.970 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:24:12.970 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:24:46.355 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplication : 55 ] - Starting MyblogApplication on WIN-02HR91NMKMS with PID 13436 (F:\Java\idea\space\myblog\target\classes started by Administrator in F:\Java\idea\space\myblog)
+2020-07-16 18:24:46.359 [ main ] - [ DEBUG ] [ com.xie.myblog.MyblogApplication : 56 ] - Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-07-16 18:24:46.360 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplication : 651 ] - No active profile set, falling back to default profiles: default
+2020-07-16 18:24:47.756 [ main ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 105 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\BlogDao.class]
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\BlogTypeDao.class]
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\CommentDao.class]
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\CountDao.class]
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\FriendLinkDao.class]
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\MessageDao.class]
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\UserDao.class]
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\UserTypeDao.class]
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'blogDao' and 'com.xie.myblog.dao.BlogDao' mapperInterface
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'blogDao'.
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'blogTypeDao' and 'com.xie.myblog.dao.BlogTypeDao' mapperInterface
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'blogTypeDao'.
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'commentDao' and 'com.xie.myblog.dao.CommentDao' mapperInterface
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'commentDao'.
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'countDao' and 'com.xie.myblog.dao.CountDao' mapperInterface
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'countDao'.
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'friendLinkDao' and 'com.xie.myblog.dao.FriendLinkDao' mapperInterface
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'friendLinkDao'.
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'messageDao' and 'com.xie.myblog.dao.MessageDao' mapperInterface
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'messageDao'.
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userDao' and 'com.xie.myblog.dao.UserDao' mapperInterface
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userTypeDao' and 'com.xie.myblog.dao.UserTypeDao' mapperInterface
+2020-07-16 18:24:47.766 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userTypeDao'.
+2020-07-16 18:24:48.277 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Initializing ProtocolHandler ["http-nio-8080"]
+2020-07-16 18:24:48.278 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardService : 173 ] - Starting service [Tomcat]
+2020-07-16 18:24:48.278 [ main ] - [ INFO  ] [ org.apache.catalina.core.StandardEngine : 173 ] - Starting Servlet engine: [Apache Tomcat/9.0.35]
+2020-07-16 18:24:48.365 [ main ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring embedded WebApplicationContext
+2020-07-16 18:24:48.489 [ main ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 946 ] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@18b4aac2
+2020-07-16 18:24:48.709 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\BlogMapper.xml]'
+2020-07-16 18:24:48.721 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\BlogTypeMapper.xml]'
+2020-07-16 18:24:48.735 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\CommentMapper.xml]'
+2020-07-16 18:24:48.742 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\CountMapper.xml]'
+2020-07-16 18:24:48.753 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\FriendLinkMapper.xml]'
+2020-07-16 18:24:48.764 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\MessageMapper.xml]'
+2020-07-16 18:24:48.786 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\UserMapper.xml]'
+2020-07-16 18:24:48.796 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\UserTypeMapper.xml]'
+2020-07-16 18:24:49.319 [ main ] - [ INFO  ] [ org.apache.coyote.http11.Http11NioProtocol : 173 ] - Starting ProtocolHandler ["http-nio-8080"]
+2020-07-16 18:24:49.495 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplication : 61 ] - Started MyblogApplication in 4.253 seconds (JVM running for 5.464)
+2020-07-16 18:25:02.066 [ http-nio-8080-exec-1 ] - [ INFO  ] [ o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173 ] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-16 18:25:02.156 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1066 ] - HikariPool-1 - configuration:
+2020-07-16 18:25:02.158 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - allowPoolSuspension.............false
+2020-07-16 18:25:02.159 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - autoCommit......................true
+2020-07-16 18:25:02.160 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - catalog.........................none
+2020-07-16 18:25:02.160 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - connectionInitSql...............none
+2020-07-16 18:25:02.161 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - connectionTestQuery.............none
+2020-07-16 18:25:02.161 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - connectionTimeout...............30000
+2020-07-16 18:25:02.162 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - dataSource......................none
+2020-07-16 18:25:02.162 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - dataSourceClassName.............none
+2020-07-16 18:25:02.165 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - dataSourceJNDI..................none
+2020-07-16 18:25:02.166 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - dataSourceProperties............{password=<masked>}
+2020-07-16 18:25:02.166 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:02.167 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - driverClassName................."com.mysql.cj.jdbc.Driver"
+2020-07-16 18:25:02.167 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - exceptionOverrideClassName......none
+2020-07-16 18:25:02.168 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - healthCheckProperties...........{}
+2020-07-16 18:25:02.168 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - healthCheckRegistry.............none
+2020-07-16 18:25:02.169 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - idleTimeout.....................600000
+2020-07-16 18:25:02.169 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - initializationFailTimeout.......1
+2020-07-16 18:25:02.169 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - isolateInternalQueries..........false
+2020-07-16 18:25:02.170 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - jdbcUrl.........................jdbc:mysql://localhost/myblog?characterEncoding=utf8&serverTimezone=GMT%2B8&useSSl=true
+2020-07-16 18:25:02.170 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - leakDetectionThreshold..........0
+2020-07-16 18:25:02.171 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - maxLifetime.....................1800000
+2020-07-16 18:25:02.171 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - maximumPoolSize.................10
+2020-07-16 18:25:02.172 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - metricRegistry..................none
+2020-07-16 18:25:02.172 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - metricsTrackerFactory...........none
+2020-07-16 18:25:02.173 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - minimumIdle.....................10
+2020-07-16 18:25:02.173 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - password........................<masked>
+2020-07-16 18:25:02.173 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - poolName........................"HikariPool-1"
+2020-07-16 18:25:02.174 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - readOnly........................false
+2020-07-16 18:25:02.174 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - registerMbeans..................false
+2020-07-16 18:25:02.175 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - scheduledExecutor...............none
+2020-07-16 18:25:02.176 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - schema..........................none
+2020-07-16 18:25:02.176 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - threadFactory...................internal
+2020-07-16 18:25:02.177 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - transactionIsolation............default
+2020-07-16 18:25:02.177 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - username........................"root"
+2020-07-16 18:25:02.178 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 1098 ] - validationTimeout...............5000
+2020-07-16 18:25:02.179 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 110 ] - HikariPool-1 - Starting...
+2020-07-16 18:25:02.179 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6859f3f9] was not registered for synchronization because synchronization is not active
+2020-07-16 18:25:02.211 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:02.212 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d1b8df8] was not registered for synchronization because synchronization is not active
+2020-07-16 18:25:03.318 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:03.318 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9bbdff] was not registered for synchronization because synchronization is not active
+2020-07-16 18:25:03.321 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:03.322 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65274894] was not registered for synchronization because synchronization is not active
+2020-07-16 18:25:03.327 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:03.329 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26aa790d] was not registered for synchronization because synchronization is not active
+2020-07-16 18:25:03.402 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 564 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4d0a3839
+2020-07-16 18:25:03.406 [ http-nio-8080-exec-1 ] - [ INFO  ] [ com.zaxxer.hikari.HikariDataSource : 123 ] - HikariPool-1 - Start completed.
+2020-07-16 18:25:03.419 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@744864461 wrapping com.mysql.cj.jdbc.ConnectionImpl@4d0a3839] will not be managed by Spring
+2020-07-16 18:25:03.433 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.addCount : 137 ] - ==>  Preparing: update `count` set `counts` = `counts`+1
+2020-07-16 18:25:03.439 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@41e7d8c1
+2020-07-16 18:25:03.473 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:03.474 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.477 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@2071850573 wrapping com.mysql.cj.jdbc.ConnectionImpl@41e7d8c1] will be managed by Spring
+2020-07-16 18:25:03.478 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:03.489 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@dad2fa
+2020-07-16 18:25:03.493 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@240931740 wrapping com.mysql.cj.jdbc.ConnectionImpl@dad2fa] will not be managed by Spring
+2020-07-16 18:25:03.493 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==>  Preparing: select * from `count`
+2020-07-16 18:25:03.507 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=3, active=3, idle=0, waiting=3)
+2020-07-16 18:25:03.526 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@319077eb
+2020-07-16 18:25:03.527 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.addCount : 137 ] - ==> Parameters: 
+2020-07-16 18:25:03.526 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:25:03.532 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1949837744 wrapping com.mysql.cj.jdbc.ConnectionImpl@319077eb] will not be managed by Spring
+2020-07-16 18:25:03.533 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==> Parameters: 0(Long)
+2020-07-16 18:25:03.534 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==>  Preparing: select count(1) from `blog` WHERE published = 1
+2020-07-16 18:25:03.535 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - ==> Parameters: 
+2020-07-16 18:25:03.567 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60f52db5
+2020-07-16 18:25:03.586 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@870757151 wrapping com.mysql.cj.jdbc.ConnectionImpl@60f52db5] will not be managed by Spring
+2020-07-16 18:25:03.588 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.selectUserByUserId : 137 ] - ==>  Preparing: select * from `user` inner join `user_type` on `user`.typeId = `user_type`.id where userId = ?
+2020-07-16 18:25:03.589 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.selectUserByUserId : 137 ] - ==> Parameters: 430423(Long)
+2020-07-16 18:25:03.594 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68658a84
+2020-07-16 18:25:03.600 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@678269864 wrapping com.mysql.cj.jdbc.ConnectionImpl@68658a84] will not be managed by Spring
+2020-07-16 18:25:03.601 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `comment`
+2020-07-16 18:25:03.601 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:25:03.627 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.addCount : 137 ] - <==    Updates: 1
+2020-07-16 18:25:03.629 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ com.xie.myblog.dao.BlogDao.blogCount : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.631 [ http-nio-8080-exec-2 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6859f3f9]
+2020-07-16 18:25:03.636 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ com.xie.myblog.dao.CountDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.636 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - <==      Total: 3
+2020-07-16 18:25:03.641 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64bbb1f1
+2020-07-16 18:25:03.658 [ http-nio-8080-exec-4 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65274894]
+2020-07-16 18:25:03.669 [ http-nio-8080-exec-6 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@9bbdff]
+2020-07-16 18:25:03.670 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.673 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60] from current transaction
+2020-07-16 18:25:03.679 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:03.682 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 13(Long)
+2020-07-16 18:25:03.686 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.selectUserByUserId : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.690 [ http-nio-8080-exec-3 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3d1b8df8]
+2020-07-16 18:25:03.702 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.704 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.705 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60] from current transaction
+2020-07-16 18:25:03.709 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:25:03.709 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 13(Long)
+2020-07-16 18:25:03.717 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1b4352bd
+2020-07-16 18:25:03.717 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.718 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.719 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60] from current transaction
+2020-07-16 18:25:03.719 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:03.720 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 23(Long)
+2020-07-16 18:25:03.722 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ com.xie.myblog.dao.CommentDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.723 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:25:03.723 [ http-nio-8080-exec-5 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@26aa790d]
+2020-07-16 18:25:03.723 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.724 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60] from current transaction
+2020-07-16 18:25:03.724 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:03.725 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:25:03.728 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.729 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.729 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60] from current transaction
+2020-07-16 18:25:03.731 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:25:03.733 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:25:03.741 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.742 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.743 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60] from current transaction
+2020-07-16 18:25:03.743 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:03.744 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 15(Long)
+2020-07-16 18:25:03.748 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:25:03.749 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5af62742
+2020-07-16 18:25:03.756 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.758 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60] from current transaction
+2020-07-16 18:25:03.759 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:03.760 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:25:03.775 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.776 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.777 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60] from current transaction
+2020-07-16 18:25:03.781 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:25:03.781 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:25:03.792 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.794 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.795 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60] from current transaction
+2020-07-16 18:25:03.798 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:03.799 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 17(Long)
+2020-07-16 18:25:03.801 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:25:03.802 [ HikariPool-1 connection adder ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 728 ] - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19389aa2
+2020-07-16 18:25:03.803 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.804 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.804 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.805 [ http-nio-8080-exec-1 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2fcd8a60]
+2020-07-16 18:25:03.877 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:03.878 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f02a235] was not registered for synchronization because synchronization is not active
+2020-07-16 18:25:03.879 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1640321445 wrapping com.mysql.cj.jdbc.ConnectionImpl@4d0a3839] will not be managed by Spring
+2020-07-16 18:25:03.880 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==>  Preparing: select count(1) from `message`
+2020-07-16 18:25:03.884 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - ==> Parameters: 
+2020-07-16 18:25:03.915 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectCount : 137 ] - <==      Total: 1
+2020-07-16 18:25:03.916 [ http-nio-8080-exec-7 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f02a235]
+2020-07-16 18:25:08.343 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:08.344 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19bbe941] was not registered for synchronization because synchronization is not active
+2020-07-16 18:25:08.347 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@496132662 wrapping com.mysql.cj.jdbc.ConnectionImpl@4d0a3839] will not be managed by Spring
+2020-07-16 18:25:08.348 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:25:08.349 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 23(Long)
+2020-07-16 18:25:08.357 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:25:08.359 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19bbe941]
+2020-07-16 18:25:08.361 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:08.361 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7429a29c] was not registered for synchronization because synchronization is not active
+2020-07-16 18:25:08.362 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@1662159997 wrapping com.mysql.cj.jdbc.ConnectionImpl@4d0a3839] will not be managed by Spring
+2020-07-16 18:25:08.362 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.getUserById : 137 ] - ==>  Preparing: select userId,nickName,email from `user` where userId = ?
+2020-07-16 18:25:08.363 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.getUserById : 137 ] - ==> Parameters: 430423(Long)
+2020-07-16 18:25:08.367 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.UserDao.getUserById : 137 ] - <==      Total: 1
+2020-07-16 18:25:08.368 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7429a29c]
+2020-07-16 18:25:10.757 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:10.758 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b34be31] was not registered for synchronization because synchronization is not active
+2020-07-16 18:25:10.767 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@595458683 wrapping com.mysql.cj.jdbc.ConnectionImpl@4d0a3839] will not be managed by Spring
+2020-07-16 18:25:10.767 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.addMessage : 137 ] - ==>  Preparing: insert into `message` ( userId, parentMessageId, content, adminMessage, createTime ) values ( ?, ?, ?, 1, ? )
+2020-07-16 18:25:10.770 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.addMessage : 137 ] - ==> Parameters: 430423(Long), 23(Long), 2222(String), 2020-07-16 18:25:08.343(Timestamp)
+2020-07-16 18:25:10.892 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.addMessage : 137 ] - <==    Updates: 1
+2020-07-16 18:25:10.892 [ http-nio-8080-exec-8 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2b34be31]
+2020-07-16 18:25:10.967 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Creating a new SqlSession
+2020-07-16 18:25:10.968 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:10.969 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ o.m.spring.transaction.SpringManagedTransaction : 49 ] - JDBC Connection [HikariProxyConnection@313751731 wrapping com.mysql.cj.jdbc.ConnectionImpl@4d0a3839] will be managed by Spring
+2020-07-16 18:25:10.970 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:10.972 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - ==> Parameters: 0(Long)
+2020-07-16 18:25:10.975 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ c.xie.myblog.dao.MessageDao.selectMessageByParent : 137 ] - <==      Total: 3
+2020-07-16 18:25:10.976 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:10.977 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:10.978 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:10.979 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 13(Long)
+2020-07-16 18:25:10.984 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:25:10.985 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:10.985 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:10.986 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:25:10.987 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 13(Long)
+2020-07-16 18:25:10.992 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:25:10.993 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:10.994 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:10.995 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:10.996 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 23(Long)
+2020-07-16 18:25:11.005 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 1
+2020-07-16 18:25:11.008 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.008 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:11.009 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:25:11.009 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 23(Long)
+2020-07-16 18:25:11.015 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:25:11.016 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.017 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:11.017 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:11.018 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 24(Long)
+2020-07-16 18:25:11.021 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:25:11.022 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.023 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:11.024 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:11.024 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:25:11.028 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:25:11.029 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.030 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:11.030 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:25:11.031 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 14(Long)
+2020-07-16 18:25:11.033 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:25:11.034 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.035 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:11.035 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:11.036 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 15(Long)
+2020-07-16 18:25:11.040 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:25:11.041 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.042 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:11.044 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:11.045 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:25:11.049 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayOne : 137 ] - <==      Total: 1
+2020-07-16 18:25:11.051 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.052 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:11.053 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==>  Preparing: select `user`.nickName,`message`.userId,`user`.typeId,`user`.avatar,`message`.content,`message`.messageId from `message` inner join `user` on `user`.userId = `message`.userId where messageId = ?
+2020-07-16 18:25:11.055 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - ==> Parameters: 16(Long)
+2020-07-16 18:25:11.059 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectMessageById : 137 ] - <==      Total: 1
+2020-07-16 18:25:11.060 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.062 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495] from current transaction
+2020-07-16 18:25:11.064 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==>  Preparing: select * from `message` inner join `user` on `user`.userId = `message`.userId where parentMessageId = ?
+2020-07-16 18:25:11.065 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - ==> Parameters: 17(Long)
+2020-07-16 18:25:11.068 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ com.xie.myblog.dao.MessageDao.selectReplayTwoList : 137 ] - <==      Total: 0
+2020-07-16 18:25:11.069 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.070 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.070 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:11.071 [ http-nio-8080-exec-9 ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionUtils : 49 ] - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c749495]
+2020-07-16 18:25:33.509 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:25:33.510 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:26:03.517 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:26:03.517 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:26:04.277 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplicationTests : 55 ] - Starting MyblogApplicationTests on WIN-02HR91NMKMS with PID 14464 (started by Administrator in F:\Java\idea\space\myblog)
+2020-07-16 18:26:04.279 [ main ] - [ DEBUG ] [ com.xie.myblog.MyblogApplicationTests : 56 ] - Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-07-16 18:26:04.280 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-07-16 18:26:08.971 [ main ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 105 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-07-16 18:26:08.982 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\BlogDao.class]
+2020-07-16 18:26:08.984 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\BlogTypeDao.class]
+2020-07-16 18:26:08.985 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\CommentDao.class]
+2020-07-16 18:26:08.986 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\CountDao.class]
+2020-07-16 18:26:08.987 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\FriendLinkDao.class]
+2020-07-16 18:26:08.987 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\MessageDao.class]
+2020-07-16 18:26:08.988 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\UserDao.class]
+2020-07-16 18:26:08.989 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\UserTypeDao.class]
+2020-07-16 18:26:08.990 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'blogDao' and 'com.xie.myblog.dao.BlogDao' mapperInterface
+2020-07-16 18:26:08.992 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'blogDao'.
+2020-07-16 18:26:08.992 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'blogTypeDao' and 'com.xie.myblog.dao.BlogTypeDao' mapperInterface
+2020-07-16 18:26:08.994 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'blogTypeDao'.
+2020-07-16 18:26:08.995 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'commentDao' and 'com.xie.myblog.dao.CommentDao' mapperInterface
+2020-07-16 18:26:08.995 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'commentDao'.
+2020-07-16 18:26:08.996 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'countDao' and 'com.xie.myblog.dao.CountDao' mapperInterface
+2020-07-16 18:26:08.996 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'countDao'.
+2020-07-16 18:26:08.997 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'friendLinkDao' and 'com.xie.myblog.dao.FriendLinkDao' mapperInterface
+2020-07-16 18:26:08.998 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'friendLinkDao'.
+2020-07-16 18:26:08.999 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'messageDao' and 'com.xie.myblog.dao.MessageDao' mapperInterface
+2020-07-16 18:26:08.999 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'messageDao'.
+2020-07-16 18:26:09.000 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userDao' and 'com.xie.myblog.dao.UserDao' mapperInterface
+2020-07-16 18:26:09.001 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-07-16 18:26:09.001 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userTypeDao' and 'com.xie.myblog.dao.UserTypeDao' mapperInterface
+2020-07-16 18:26:09.001 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userTypeDao'.
+2020-07-16 18:26:10.105 [ main ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 946 ] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@6bc7c054
+2020-07-16 18:26:10.800 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\BlogMapper.xml]'
+2020-07-16 18:26:10.824 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\BlogTypeMapper.xml]'
+2020-07-16 18:26:10.879 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\CommentMapper.xml]'
+2020-07-16 18:26:10.903 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\CountMapper.xml]'
+2020-07-16 18:26:10.935 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\FriendLinkMapper.xml]'
+2020-07-16 18:26:10.969 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\MessageMapper.xml]'
+2020-07-16 18:26:11.004 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\UserMapper.xml]'
+2020-07-16 18:26:11.019 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\UserTypeMapper.xml]'
+2020-07-16 18:26:13.220 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplicationTests : 61 ] - Started MyblogApplicationTests in 10.075 seconds (JVM running for 12.456)
+2020-07-16 18:26:33.519 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:26:33.519 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:27:03.521 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:27:03.522 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:27:33.524 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:27:33.525 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:28:03.527 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:28:03.528 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:28:33.530 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:28:33.530 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:29:03.532 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 421 ] - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2020-07-16 18:29:03.533 [ HikariPool-1 housekeeper ] - [ DEBUG ] [ com.zaxxer.hikari.pool.HikariPool : 517 ] - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+2020-07-16 18:36:02.024 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplicationTests : 55 ] - Starting MyblogApplicationTests on WIN-02HR91NMKMS with PID 13812 (started by Administrator in F:\Java\idea\space\myblog)
+2020-07-16 18:36:02.034 [ main ] - [ DEBUG ] [ com.xie.myblog.MyblogApplicationTests : 56 ] - Running with Spring Boot v2.3.0.RELEASE, Spring v5.2.6.RELEASE
+2020-07-16 18:36:02.034 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplicationTests : 651 ] - No active profile set, falling back to default profiles: default
+2020-07-16 18:36:03.564 [ main ] - [ DEBUG ] [ org.apache.ibatis.logging.LogFactory : 105 ] - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-07-16 18:36:03.574 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\BlogDao.class]
+2020-07-16 18:36:03.574 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\BlogTypeDao.class]
+2020-07-16 18:36:03.574 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\CommentDao.class]
+2020-07-16 18:36:03.574 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\CountDao.class]
+2020-07-16 18:36:03.574 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\FriendLinkDao.class]
+2020-07-16 18:36:03.574 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\MessageDao.class]
+2020-07-16 18:36:03.574 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\UserDao.class]
+2020-07-16 18:36:03.574 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 435 ] - Identified candidate component class: file [F:\Java\idea\space\myblog\target\classes\com\xie\myblog\dao\UserTypeDao.class]
+2020-07-16 18:36:03.574 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'blogDao' and 'com.xie.myblog.dao.BlogDao' mapperInterface
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'blogDao'.
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'blogTypeDao' and 'com.xie.myblog.dao.BlogTypeDao' mapperInterface
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'blogTypeDao'.
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'commentDao' and 'com.xie.myblog.dao.CommentDao' mapperInterface
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'commentDao'.
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'countDao' and 'com.xie.myblog.dao.CountDao' mapperInterface
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'countDao'.
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'friendLinkDao' and 'com.xie.myblog.dao.FriendLinkDao' mapperInterface
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'friendLinkDao'.
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'messageDao' and 'com.xie.myblog.dao.MessageDao' mapperInterface
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'messageDao'.
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userDao' and 'com.xie.myblog.dao.UserDao' mapperInterface
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userDao'.
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Creating MapperFactoryBean with name 'userTypeDao' and 'com.xie.myblog.dao.UserTypeDao' mapperInterface
+2020-07-16 18:36:03.584 [ main ] - [ DEBUG ] [ org.mybatis.spring.mapper.ClassPathMapperScanner : 49 ] - Enabling autowire by type for MapperFactoryBean with name 'userTypeDao'.
+2020-07-16 18:36:04.164 [ main ] - [ DEBUG ] [ com.zaxxer.hikari.HikariConfig : 946 ] - Driver class com.mysql.cj.jdbc.Driver found in Thread context class loader sun.misc.Launcher$AppClassLoader@6bc7c054
+2020-07-16 18:36:04.614 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\BlogMapper.xml]'
+2020-07-16 18:36:04.634 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\BlogTypeMapper.xml]'
+2020-07-16 18:36:04.654 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\CommentMapper.xml]'
+2020-07-16 18:36:04.664 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\CountMapper.xml]'
+2020-07-16 18:36:04.684 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\FriendLinkMapper.xml]'
+2020-07-16 18:36:04.704 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\MessageMapper.xml]'
+2020-07-16 18:36:04.734 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\UserMapper.xml]'
+2020-07-16 18:36:04.754 [ main ] - [ DEBUG ] [ org.mybatis.spring.SqlSessionFactoryBean : 49 ] - Parsed mapper file: 'file [F:\Java\idea\space\myblog\target\classes\mapper\UserTypeMapper.xml]'
+2020-07-16 18:36:06.954 [ main ] - [ INFO  ] [ com.xie.myblog.MyblogApplicationTests : 61 ] - Started MyblogApplicationTests in 5.656 seconds (JVM running for 7.377)
