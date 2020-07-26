@@ -17,7 +17,7 @@ public class MailInfo implements Serializable {
     private String host ;
     //用户邮箱 如**@163
     private String formName ;
-    //用户授权码 不是用户名密码 可以自行查看相关邮件服务器怎么查看
+    //用户授权码，可以在相关邮件服务器查看
     private String formPassword ;
     //消息回复邮箱
     private String replayAddress ;
