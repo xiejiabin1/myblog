@@ -24,7 +24,6 @@ public class Message implements Serializable {
     private Timestamp createTime;       //创建时间
 
     private User user;
-    //回复留言
-    private List<Message> replyMessagesList = new ArrayList<>();
-    private Message parentMessage;
+    private List<Message> replyMessagesList = new ArrayList<>();//回复留言
+    private Message parentMessage;      //父留言
 }

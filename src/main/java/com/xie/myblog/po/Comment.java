@@ -25,10 +25,6 @@ public class Comment implements Serializable {
     private Timestamp createTime;       //创建时间
 
     private User user;
-    //回复评论
-    private List<Comment> replyCommentList = new ArrayList<>();
-    private Comment parentComment;
-
-
-
+    private List<Comment> replyCommentList = new ArrayList<>(); //回复评论
+    private Comment parentComment;      //父评论
 }

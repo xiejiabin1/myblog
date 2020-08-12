@@ -6,7 +6,7 @@ import lombok.EqualsAndHashCode;
 import java.io.Serializable;
 
 /**
- * @description:
+ * @description: 博文分类实体类
  * @author: 谢
  * @time: 2020/6/26 12:33
  */
