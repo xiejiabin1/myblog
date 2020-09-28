@@ -19,7 +19,7 @@
     </properties>
 
     <dependencies>
-        <!--springboot整合druid数据源-->
+        <!--springboot整合druid连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
