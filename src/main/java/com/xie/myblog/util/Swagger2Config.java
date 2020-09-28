@@ -42,11 +42,11 @@ public class Swagger2Config {
                 // 描述
                 .description("使用Knife4j构建API文档")
                 // 作者信息
-                .contact(new Contact("ThinkWon", "https://xiejiabin.online/", "xie430423@163.com"))
+                .contact(new Contact("先谢郭嘉", "https://xiejiabin.online/", "xie430423@163.com"))
                 // 服务网址
                 .termsOfServiceUrl("https://xiejiabin.online/")
                 // 版本
-                .version("1.0.0")
+                .version("1.0")
                 .build();
     }
 
